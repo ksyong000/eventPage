@@ -2053,7 +2053,7 @@
         var $tabIndicator = $('.tab-indicator');
         $(window).on('scroll', function () {
           $promoSections.each(function (index) {
-            var offsetTop = $(this).offset().top + 420;
+            var offsetTop = $(this).offset().top + 350;
             var scrollTop = $(window).scrollTop();
             var windowHeight = $(window).height();
             if (scrollTop + windowHeight / 2 >= offsetTop && scrollTop + windowHeight / 2 < offsetTop + $(this).outerHeight()) {
