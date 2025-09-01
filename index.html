@@ -2292,7 +2292,7 @@
           var tabIndicator = $('.tab-indicator');
           var targetPosition = $(this).position().left;
           $('html, body').animate({ //해당 위치로 스크롤 이동
-            scrollTop: target.offset().top
+            scrollTop: target.offset().top - 100
           }, 500);
         });
         var $promoSections = $('.promo');
@@ -2300,7 +2300,7 @@
         var $tabIndicator = $('.tab-indicator');
         $(window).on('scroll', function () {
           $promoSections.each(function (index) {
-            var offsetTop = $(this).offset().top + 250;
+            var offsetTop = $(this).offset().top + 380;
             var scrollTop = $(window).scrollTop();
             var windowHeight = $(window).height();
             if (scrollTop + windowHeight / 2 >= offsetTop && scrollTop + windowHeight / 2 < offsetTop + $(this).outerHeight()) {
