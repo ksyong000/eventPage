@@ -488,11 +488,24 @@
   background: #fff;
 }
 
+.marathon-Root .goodsList-root .goods-tab .goods-indicator {
+  position: absolute;
+  bottom: 15px;
+  height: 2px;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
 .marathon-Root .goodsList-root .goods-tab ul {
   display: inline-flex;
   align-items: center;
   gap: 30px;
 }
+
+.marathon-Root .goodsList-root .goods-tab ul li {
+  position: relative;
+}
+
 
 .marathon-Root .goodsList-root .goodsList .ps-prd-list--wrap {
   padding: 0 20px;
