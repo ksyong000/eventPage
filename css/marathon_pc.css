@@ -259,15 +259,13 @@
 }
 
 .promotion-root .sec4 .swiper-btn-wrap .swiper-prev-btn {
-  background: url(https://image.prospecs.com/front/images/planning/9572/img/sec4_arr_l.svg)
-    center/cover no-repeat;
+  background: url(https://image.prospecs.com/front/images/planning/9572/img/sec4_arr_l.svg) center/cover no-repeat;
   width: 1.5rem;
   height: 1.5rem;
 }
 
 .promotion-root .sec4 .swiper-btn-wrap .swiper-next-btn {
-  background: url(https://image.prospecs.com/front/images/planning/9572/img/sec4_arr_l.svg)
-    center/cover no-repeat;
+  background: url(https://image.prospecs.com/front/images/planning/9572/img/sec4_arr_l.svg) center/cover no-repeat;
   width: 1.5rem;
   height: 1.5rem;
   transform: rotate(180deg);
@@ -421,8 +419,12 @@
 }
 
 /* 마라톤 스타일재정의[s] */
-:not(.top).up .marathon-Root {
-  transform: translateY(135px);
+.ps-header {
+  display: none !important;
+}
+
+#psWrap.sub.ps-new {
+  padding-top: 0 !important
 }
 
 .marathon-Root {
@@ -456,6 +458,7 @@
   color: #8e8e8e;
   transition: color 0.2s ease-in;
 }
+
 .marathon-Root .promotion-root .tab-root a.active {
   color: #fff;
   font-weight: 600;
@@ -510,12 +513,14 @@
   position: relative;
   flex: auto;
 }
+
 .marathon-Root .goodsList-root .goods-tab ul li a {
   font-size: 24px;
   font-weight: 500;
   color: #8e8e8e;
   transition: all 0.2s ease;
 }
+
 .marathon-Root .goodsList-root .goods-tab ul li.active a {
   font-weight: 700;
   color: #1d1d1d;
@@ -542,6 +547,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .marathon-Root .promotion-root [class*="sec"] .imgs img {
   padding: 0;
 }
@@ -555,6 +561,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+
 .marathon-Root .promotion-root [class*="sec"] .imgs .img-grid img {
   height: 100%;
 }
@@ -568,6 +575,7 @@ body::-webkit-scrollbar {
     font-size: 20px;
   }
 }
+
 @media (max-width: 1483px) {
   .marathon-Root .goodsList-root .goods-tab ul li a {
     font-size: 18px;
